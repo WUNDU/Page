@@ -1,0 +1,74 @@
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0, 33, 107, 0.9), rgba(0, 60, 195, 0.85));
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00216b, #003cc3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #003cc3, #00216b);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(0, 33, 107, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #ffd400, #ca6f05);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #ca6f05, #ffd400);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(255, 212, 0, 0.4);
+}
+
+.navbar-active {
+  background-color: white;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+  width: 60%;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+}
