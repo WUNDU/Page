@@ -72,3 +72,21 @@ h6 {
   transform: translateY(-8px);
   box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
 }
+
+.social-icon img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+img.filter {
+  filter: invert(85%) sepia(6%) saturate(207%) hue-rotate(183deg) brightness(90%) contrast(89%);
+  transition: all 0.3s ease;
+}
+
+a:hover img.filter {
+  filter: invert(67%) sepia(61%) saturate(500%) hue-rotate(352deg) brightness(98%) contrast(91%);
+}
+.white-filter {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
