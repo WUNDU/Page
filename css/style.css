@@ -28,14 +28,14 @@ h6 {
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, #ffd400, #ca6f05);
+  background: linear-gradient(135deg, #ca6f05, #ffd400);
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #ca6f05, #ffd400);
+  background: linear-gradient(135deg, #ffd400, #ca6f05);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px -5px rgba(255, 212, 0, 0.4);
+  box-shadow: 0 10px 20px -5px rgba(202, 111, 5, 0.4);
 }
 
 .navbar-active {

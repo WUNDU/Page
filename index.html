@@ -8,7 +8,8 @@
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,10 +21,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/tailwind.js"></script>
-
 </head>
 
-<body class="bg-light overflow-x-hidden">
+<body class="bg-light overflow-x-hidden font-inter">
   <!-- Mobile Menu Overlay -->
   <div id="mobile-menu" class="fixed inset-0 bg-primary bg-opacity-95 z-50 hidden transition-all duration-300">
     <div class="flex justify-end p-6">
@@ -35,8 +35,6 @@
       <a href="#home" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Home</a>
       <a href="#about" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Sobre</a>
       <a href="#features" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Recursos</a>
-      <a href="#testimonials"
-        class="text-white text-2xl hover:text-accent transition-colors mobile-link">Depoimentos</a>
       <a href="#download" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Download</a>
       <a href="#contact" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Contato</a>
     </div>
@@ -53,7 +51,6 @@
           <a href="#home" class="text-white hover:text-accent transition-colors nav-link">Home</a>
           <a href="#about" class="text-white hover:text-accent transition-colors nav-link">Sobre</a>
           <a href="#features" class="text-white hover:text-accent transition-colors nav-link">Recursos</a>
-          <a href="#testimonials" class="text-white hover:text-accent transition-colors nav-link">Depoimentos</a>
           <a href="#download" class="text-white hover:text-accent transition-colors nav-link">Download</a>
           <a href="#contact" class="text-white hover:text-accent transition-colors nav-link">Contato</a>
         </div>
@@ -75,7 +72,7 @@
           data-aos="fade-right" data-aos-delay="200">
           WUNDU • Controle Financeiro
         </span>
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-right"
+        <h1 class="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-right"
           data-aos-delay="300">Transforme sua vida <span class="text-accent">financeira</span></h1>
         <p class="text-lg md:text-xl text-white opacity-90 mb-8 max-w-2xl" data-aos="fade-right" data-aos-delay="400">
           Gerencie suas finanças de forma inteligente, simples e prática. Alcance seus objetivos financeiros com o
@@ -83,7 +80,7 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="500">
           <a href="#download" class="btn-primary text-white px-8 py-4 rounded-full font-medium text-center shadow-lg">
-            Baixe Agora <i class="fas fa-arrow-right ml-2"></i>
+            Conheça o MVP <i class="fas fa-arrow-right ml-2"></i>
           </a>
           <a href="#features"
             class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-medium text-center hover:bg-opacity-30 transition-all">
@@ -110,16 +107,17 @@
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div class="relative" data-aos="fade-right">
-          <img src="assets/logotipo.png" alt="Sobre WUNDU" class="rounded-xl shadow-2xl w-full">
-          <div class="absolute -bottom-8 -right-8 bg-primary text-white p-6 rounded-xl shadow-xl" data-aos="zoom-in"
+          <img src="assets/wundu.art.jpg" alt="Sobre WUNDU" class="rounded-xl floating shadow-2xl w-full">
+          <div class="absolute -bottom-8 -right-8 bg-secondary text-white p-6 rounded-xl shadow-xl" data-aos="zoom-in"
             data-aos-delay="200">
             <span class="text-3xl font-bold">100%</span>
             <p class="text-sm">Seguro e Confiável</p>
           </div>
         </div>
         <div data-aos="fade-left">
-          <span class="text-secondary font-medium mb-2 block">SOBRE NÓS</span>
-          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Transformando sua relação com o dinheiro</h2>
+          <span class="text-tertiary font-medium mb-2 block">SOBRE NÓS</span>
+          <h2 class="font-poppins text-3xl md:text-4xl font-bold text-dark mb-6">Transformando sua relação com o
+            dinheiro</h2>
           <p class="text-gray-600 mb-8">
             Na WUNDU, acreditamos que todos merecem ter controle sobre suas finanças. Nosso aplicativo foi desenvolvido
             com uma missão clara: simplificar o gerenciamento financeiro e ajudar você a tomar decisões inteligentes
@@ -175,8 +173,8 @@
   <section id="features" class="py-24 bg-light">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <span class="text-secondary font-medium">O QUE OFERECEMOS</span>
-        <h2 class="text-4xl font-bold text-dark mt-2 mb-4">Recursos do WUNDU</h2>
+        <span class="text-tertiary font-medium">O QUE OFERECEMOS</span>
+        <h2 class="font-poppins text-4xl font-bold text-dark mt-2 mb-4">Recursos do WUNDU</h2>
         <p class="text-gray-600 max-w-xl mx-auto">Tudo que você precisa para transformar seu controle financeiro em uma
           experiência simples e eficaz</p>
       </div>
@@ -184,13 +182,13 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-chart-pie text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Controle de Gastos</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Controle de Gastos</h3>
           <p class="text-gray-600 mb-6">Visualize e categorize suas despesas de forma simples, entendendo para onde seu
             dinheiro está indo</p>
           <a href="#download"
@@ -202,13 +200,13 @@
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up"
           data-aos-delay="100">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-bullseye text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Metas Financeiras</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Metas Financeiras</h3>
           <p class="text-gray-600 mb-6">Estabeleça objetivos claros e acompanhe seu progresso com ferramentas visuais e
             motivacionais</p>
           <a href="#download"
@@ -220,13 +218,13 @@
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up"
           data-aos-delay="200">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-bell text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Alertas Inteligentes</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Alertas Inteligentes</h3>
           <p class="text-gray-600 mb-6">Receba notificações personalizadas sobre gastos excessivos, contas a pagar e
             oportunidades de economia</p>
           <a href="#download"
@@ -237,13 +235,13 @@
 
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-wallet text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Gestão de Orçamento</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Gestão de Orçamento</h3>
           <p class="text-gray-600 mb-6">Crie orçamentos realistas e controle seus gastos por categoria para nunca mais
             estourar suas finanças</p>
           <a href="#download"
@@ -255,13 +253,13 @@
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up"
           data-aos-delay="100">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-sync-alt text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Sincronização Bancária</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Sincronização Bancária</h3>
           <p class="text-gray-600 mb-6">Conecte suas contas bancárias e cartões para acompanhar automaticamente suas
             transações</p>
           <a href="#download"
@@ -273,13 +271,13 @@
         <div class="card-hover bg-white p-8 rounded-2xl shadow-md relative overflow-hidden group" data-aos="fade-up"
           data-aos-delay="200">
           <div
-            class="absolute right-0 top-0 h-24 w-24 bg-secondary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
           </div>
           <div
             class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
             <i class="fas fa-lightbulb text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-dark">Dicas Personalizadas</h3>
+          <h3 class="font-poppins text-xl font-bold mb-4 text-dark">Dicas Personalizadas</h3>
           <p class="text-gray-600 mb-6">Receba conselhos baseados em seus hábitos financeiros para melhorar sua saúde
             financeira</p>
           <a href="#download"
@@ -293,26 +291,26 @@
 
   <!-- Estatísticas Parallax -->
   <section class="min-h-[400px] relative">
-    <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080');">
+    <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('assets/logotipo.png');">
     </div>
     <div class="absolute inset-0 z-10 bg-gradient-to-r from-primary/90 to-secondary/80"></div>
     <div class="container mx-auto px-6 relative z-20 py-20">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div class="stats-counter" data-aos="fade-up">
-          <div class="text-5xl font-bold text-white mb-2">50K+</div>
-          <div class="text-white text-lg">Usuários Ativos</div>
+          <div class="text-5xl font-bold text-accent mb-2">50K+</div>
+          <div class="text-white text-lg">Downloads Previstos</div>
         </div>
         <div class="stats-counter" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-5xl font-bold text-white mb-2">4.8</div>
-          <div class="text-white text-lg">Avaliação na App Store</div>
+          <div class="text-5xl font-bold text-accent mb-2">4.8</div>
+          <div class="text-white text-lg">Avaliação Esperada</div>
         </div>
         <div class="stats-counter" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-5xl font-bold text-white mb-2">30%</div>
+          <div class="text-5xl font-bold text-accent mb-2">30%</div>
           <div class="text-white text-lg">Economia Média</div>
         </div>
         <div class="stats-counter" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-5xl font-bold text-white mb-2">15+</div>
-          <div class="text-white text-lg">Integrações Bancárias</div>
+          <div class="text-5xl font-bold text-accent mb-2">15+</div>
+          <div class="text-white text-lg">Recursos Planejados</div>
         </div>
       </div>
     </div>
@@ -322,8 +320,8 @@
   <section class="py-24 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <span class="text-secondary font-medium">FÁCIL DE USAR</span>
-        <h2 class="text-4xl font-bold text-dark mt-2 mb-4">Como o WUNDU Funciona</h2>
+        <span class="text-tertiary font-medium">FÁCIL DE USAR</span>
+        <h2 class="font-poppins text-4xl font-bold text-dark mt-2 mb-4">Como o WUNDU Funciona</h2>
         <p class="text-gray-600 max-w-xl mx-auto">Comece a usar o WUNDU em poucos passos e transforme sua vida
           financeira</p>
       </div>
@@ -335,14 +333,13 @@
               class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg relative z-10 floating">
               1
             </div>
-            <div class="absolute w-full h-full bg-primary/20 rounded-2xl top-3 left-3 z-0"></div>
+            <div class="absolute w-full h-full bg-accent rounded-2xl top-3 left-3 z-0"></div>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-dark">Download</h3>
-          <p class="text-gray-600">Baixe o aplicativo na App Store ou Google Play</p>
+          <h3 class="font-poppins text-xl font-bold mb-2 text-dark">Acesse o GitHub</h3>
+          <p class="text-gray-600">Baixe o código fonte do nosso MVP no repositório GitHub</p>
 
           <!-- Linha conectora (visível apenas em desktop) -->
-          <div
-            class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-primary/30 z-0 transform -translate-x-1/2">
+          <div class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-accent z-0 transform -translate-x-1/2">
           </div>
         </div>
 
@@ -352,14 +349,13 @@
               class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg relative z-10 floating">
               2
             </div>
-            <div class="absolute w-full h-full bg-primary/20 rounded-2xl top-3 left-3 z-0"></div>
+            <div class="absolute w-full h-full bg-accent rounded-2xl top-3 left-3 z-0"></div>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-dark">Cadastre-se</h3>
-          <p class="text-gray-600">Crie sua conta com poucos cliques e comece a usar</p>
+          <h3 class="font-poppins text-xl font-bold mb-2 text-dark">Instale o App</h3>
+          <p class="text-gray-600">Siga as instruções para configurar o aplicativo</p>
 
           <!-- Linha conectora (visível apenas em desktop) -->
-          <div
-            class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-primary/30 z-0 transform -translate-x-1/2">
+          <div class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-accent z-0 transform -translate-x-1/2">
           </div>
         </div>
 
@@ -369,14 +365,13 @@
               class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg relative z-10 floating">
               3
             </div>
-            <div class="absolute w-full h-full bg-primary/20 rounded-2xl top-3 left-3 z-0"></div>
+            <div class="absolute w-full h-full bg-accent rounded-2xl top-3 left-3 z-0"></div>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-dark">Conecte suas contas</h3>
-          <p class="text-gray-600">Integre suas contas bancárias e cartões com segurança</p>
+          <h3 class="font-poppins text-xl font-bold mb-2 text-dark">Configure seu perfil</h3>
+          <p class="text-gray-600">Crie seu perfil e comece a registrar suas finanças</p>
 
           <!-- Linha conectora (visível apenas em desktop) -->
-          <div
-            class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-primary/30 z-0 transform -translate-x-1/2">
+          <div class="hidden md:block absolute top-20 left-full w-full h-0.5 bg-accent z-0 transform -translate-x-1/2">
           </div>
         </div>
 
@@ -386,108 +381,16 @@
               class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg relative z-10 floating">
               4
             </div>
-            <div class="absolute w-full h-full bg-primary/20 rounded-2xl top-3 left-3 z-0"></div>
+            <div class="absolute w-full h-full bg-accent rounded-2xl top-3 left-3 z-0"></div>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-dark">Transforme suas finanças</h3>
+          <h3 class="font-poppins text-xl font-bold mb-2 text-dark">Transforme suas finanças</h3>
           <p class="text-gray-600">Aproveite todos os recursos e tome o controle do seu dinheiro</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Depoimentos -->
-  <section id="testimonials" class="py-24 bg-light">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <span class="text-secondary font-medium">O QUE DIZEM NOSSOS USUÁRIOS</span>
-        <h2 class="text-4xl font-bold text-dark mt-2 mb-4">Depoimentos</h2>
-        <p class="text-gray-600 max-w-xl mx-auto">Veja como o WUNDU tem ajudado pessoas a transformarem suas vidas
-          financeiras</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up">
-          <div class="flex items-center mb-6">
-            <div class="w-16 h-16 rounded-full overflow-hidden">
-              <img src="/api/placeholder/64/64" alt="Usuário 1" class="w-full h-full object-cover">
-            </div>
-            <div class="ml-4">
-              <h4 class="font-bold text-dark">Amanda Silva</h4>
-              <p class="text-gray-600 text-sm">Usuária há 8 meses</p>
-            </div>
-          </div>
-          <div class="text-secondary mb-4">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          "O WUNDU transformou completamente minha relação com o dinheiro. Finalmente consigo economizar e ter clareza
-          sobre meus
-          gastos. O melhor investimento que fiz para meu futuro financeiro!"
-          </p>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex items-center mb-6">
-            <div class="w-16 h-16 rounded-full overflow-hidden">
-              <img src="/api/placeholder/64/64" alt="Usuário 2" class="w-full h-full object-cover">
-            </div>
-            <div class="ml-4">
-              <h4 class="font-bold text-dark">Ricardo Mendes</h4>
-              <p class="text-gray-600 text-sm">Usuário há 1 ano</p>
-            </div>
-          </div>
-          <div class="text-secondary mb-4">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="text-gray-600">
-            "Em apenas 6 meses usando o WUNDU, consegui juntar dinheiro suficiente para dar entrada no meu apartamento.
-            Os
-            alertas e dicas personalizadas fizeram toda a diferença para mim!"
-          </p>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex items-center mb-6">
-            <div class="w-16 h-16 rounded-full overflow-hidden">
-              <img src="/api/placeholder/64/64" alt="Usuário 3" class="w-full h-full object-cover">
-            </div>
-            <div class="ml-4">
-              <h4 class="font-bold text-dark">Juliana Costa</h4>
-              <p class="text-gray-600 text-sm">Usuária há 3 meses</p>
-            </div>
-          </div>
-          <div class="text-secondary mb-4">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <p class="text-gray-600">
-            "A interface intuitiva e os gráficos coloridos tornaram o controle financeiro algo prazeroso! Nunca imaginei
-            que
-            diria isso, mas agora adoro conferir meus relatórios financeiros semanais."
-          </p>
-        </div>
-      </div>
-
-      <!-- Carousel Controls -->
-      <div class="flex justify-center mt-12 space-x-2" data-aos="fade-up">
-        <button class="w-3 h-3 rounded-full bg-primary"></button>
-        <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"></button>
-        <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download CTA -->
+  <!-- Download CTA - Modificado para MVP -->
   <section id="download" class="py-24 bg-white">
     <div class="container mx-auto px-6">
       <div class="rounded-3xl bg-gradient-to-r from-primary to-secondary overflow-hidden relative">
@@ -500,32 +403,24 @@
 
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div class="p-12 md:p-16" data-aos="fade-right">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Baixe agora e transforme suas finanças!</h2>
+            <h2 class="font-poppins text-3xl md:text-4xl font-bold text-white mb-6">Acesse nosso MVP no GitHub!</h2>
             <p class="text-white opacity-90 mb-8">
-              Disponível para iOS e Android. Experimente gratuitamente por 30 dias e descubra como o WUNDU pode
-              transformar sua vida financeira.
+              Estamos em fase de desenvolvimento e nosso MVP está disponível para download no GitHub. Seja um dos
+              primeiros a testar e nos ajude com seu feedback para melhorar o produto antes do lançamento oficial.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="#"
-                class="bg-white text-primary px-6 py-3 rounded-xl font-medium flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all">
-                <i class="fab fa-apple text-2xl mr-3"></i>
-                <div class="text-left">
-                  <span class="text-xs block">Disponível na</span>
-                  <span class="font-semibold">App Store</span>
-                </div>
+            <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
+              <a href="https://github.com/wundu-finance/app"
+                class="btn-secondary text-primary bg-white px-8 py-4 rounded-full font-medium text-center shadow-lg flex items-center justify-center gap-2">
+                <i class="fab fa-github text-xl"></i> Acessar GitHub
               </a>
-              <a href="#"
-                class="bg-white text-primary px-6 py-3 rounded-xl font-medium flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all">
-                <i class="fab fa-google-play text-2xl mr-3"></i>
-                <div class="text-left">
-                  <span class="text-xs block">Disponível no</span>
-                  <span class="font-semibold">Google Play</span>
-                </div>
+              <a href="#contact"
+                class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-medium text-center hover:bg-opacity-30 transition-all">
+                Enviar Feedback <i class="fas fa-comment ml-2"></i>
               </a>
             </div>
           </div>
-          <div class="hidden md:block" data-aos="fade-left">
-            <img src="/api/placeholder/500/600" alt="WUNDU App" class="transform translate-y-8 floating">
+          <div class="hidden md:block p-12" data-aos="fade-left">
+            <img src="assets/wundu.art.png" alt="WUNDU App Preview" class="w-full rounded-xl shadow-2xl floating">
           </div>
         </div>
       </div>
@@ -536,279 +431,313 @@
   <section class="py-24 bg-light">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <span class="text-secondary font-medium">PERGUNTAS FREQUENTES</span>
-        <h2 class="text-4xl font-bold text-dark mt-2 mb-4">Dúvidas Comuns</h2>
-        <p class="text-gray-600 max-w-xl mx-auto">Encontre respostas para as perguntas mais frequentes sobre o WUNDU</p>
+        <span class="text-tertiary font-medium">DÚVIDAS FREQUENTES</span>
+        <h2 class="font-poppins text-4xl font-bold text-dark mt-2 mb-4">Perguntas Frequentes</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">Encontre respostas para as dúvidas mais comuns sobre o WUNDU</p>
       </div>
 
       <div class="max-w-3xl mx-auto">
-        <div class="mb-6 border-b border-gray-200 pb-6" data-aos="fade-up">
-          <div class="flex justify-between items-center cursor-pointer">
-            <h3 class="font-bold text-lg text-dark">O WUNDU é seguro?</h3>
-            <i class="fas fa-chevron-down text-primary"></i>
-          </div>
-          <div class="mt-4 text-gray-600">
-            Sim, a segurança é nossa prioridade! O WUNDU utiliza criptografia avançada e não armazena dados sensíveis
-            como
-            senhas bancárias. Nossos sistemas são auditados regularmente por empresas especializadas em segurança
-            digital.
-          </div>
-        </div>
-
-        <div class="mb-6 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex justify-between items-center cursor-pointer">
-            <h3 class="font-bold text-lg text-dark">Preciso conectar minhas contas bancárias?</h3>
-            <i class="fas fa-chevron-down text-primary"></i>
-          </div>
-          <div class="mt-4 text-gray-600">
-            Não é obrigatório, mas recomendamos para uma experiência completa. Você pode usar o WUNDU manualmente,
-            inserindo suas transações, ou conectar suas contas para sincronização automática.
+        <div class="mb-6 bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up">
+          <button class="faq-toggle w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none">
+            <h3 class="font-poppins font-semibold text-lg text-dark">O que é o WUNDU?</h3>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-8 pb-6 hidden">
+            <p class="text-gray-600">WUNDU é um aplicativo de controle financeiro pessoal que ajuda você a gerenciar
+              suas
+              finanças, acompanhar gastos, criar orçamentos e alcançar suas metas financeiras de forma simples e
+              intuitiva.</p>
           </div>
         </div>
 
-        <div class="mb-6 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex justify-between items-center cursor-pointer">
-            <h3 class="font-bold text-lg text-dark">Quanto custa o WUNDU?</h3>
-            <i class="fas fa-chevron-down text-primary"></i>
-          </div>
-          <div class="mt-4 text-gray-600">
-            Oferecemos um plano gratuito com recursos básicos e um plano premium de R$12,90/mês ou R$99,90/ano que
-            inclui
-            todos os recursos avançados, como sincronização bancária, metas financeiras ilimitadas e relatórios
-            detalhados.
-          </div>
-        </div>
-
-        <div class="mb-6 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="flex justify-between items-center cursor-pointer">
-            <h3 class="font-bold text-lg text-dark">Posso exportar meus dados do WUNDU?</h3>
-            <i class="fas fa-chevron-down text-primary"></i>
-          </div>
-          <div class="mt-4 text-gray-600">
-            Sim, você pode exportar seus dados em formatos CSV ou PDF a qualquer momento. Seus dados são seus e você tem
-            total controle sobre eles.
+        <div class="mb-6 bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq-toggle w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none">
+            <h3 class="font-poppins font-semibold text-lg text-dark">O que significa MVP?</h3>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-8 pb-6 hidden">
+            <p class="text-gray-600">MVP significa "Minimum Viable Product" ou Produto Mínimo Viável. É a primeira
+              versão
+              do nosso aplicativo com funcionalidades básicas para que possamos testar, validar e melhorar com base no
+              feedback dos usuários antes do lançamento oficial.</p>
           </div>
         </div>
 
-        <div class="mb-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="flex justify-between items-center cursor-pointer">
-            <h3 class="font-bold text-lg text-dark">O WUNDU funciona offline?</h3>
-            <i class="fas fa-chevron-down text-primary"></i>
-          </div>
-          <div class="mt-4 text-gray-600">
-            Sim, você pode registrar transações mesmo sem conexão com a internet. Quando você se conectar novamente, os
-            dados serão sincronizados automaticamente com sua conta.
+        <div class="mb-6 bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq-toggle w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none">
+            <h3 class="font-poppins font-semibold text-lg text-dark">O aplicativo é gratuito?</h3>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-8 pb-6 hidden">
+            <p class="text-gray-600">Sim, a versão MVP do WUNDU é totalmente gratuita. Nosso objetivo é coletar feedback
+              e
+              melhorar o produto. No futuro, pretendemos oferecer uma versão básica gratuita e planos premium com
+              recursos
+              avançados.</p>
           </div>
         </div>
-      </div>
 
-      <div class="text-center mt-12" data-aos="fade-up">
-        <p class="text-gray-600 mb-6">Ainda tem dúvidas? Entre em contato conosco</p>
-        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-full font-medium inline-block shadow-lg">
-          Fale Conosco <i class="fas fa-arrow-right ml-2"></i>
-        </a>
+        <div class="mb-6 bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <button class="faq-toggle w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none">
+            <h3 class="font-poppins font-semibold text-lg text-dark">Meus dados financeiros estão seguros?</h3>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-8 pb-6 hidden">
+            <p class="text-gray-600">Absolutamente. Segurança é nossa prioridade. Utilizamos criptografia avançada para
+              proteger seus dados e não compartilhamos nenhuma informação com terceiros. Além disso, você sempre tem
+              total
+              controle sobre seus dados.</p>
+          </div>
+        </div>
+
+        <div class="mb-6 bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+          <button class="faq-toggle w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none">
+            <h3 class="font-poppins font-semibold text-lg text-dark">Como posso contribuir com feedback?</h3>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-8 pb-6 hidden">
+            <p class="text-gray-600">Você pode enviar feedback diretamente pelo aplicativo, criando issues no GitHub ou
+              entrando em contato através do formulário em nosso site. Valorizamos muito sua opinião para melhorar o
+              WUNDU!</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contato -->
   <section id="contact" class="py-24 bg-white">
     <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-tertiary font-medium">ENTRE EM CONTATO</span>
+        <h2 class="font-poppins text-4xl font-bold text-dark mt-2 mb-4">Fale Conosco</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">Estamos ansiosos para receber seu feedback e responder suas dúvidas
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-16">
         <div data-aos="fade-right">
-          <span class="text-secondary font-medium mb-2 block">ENTRE EM CONTATO</span>
-          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Estamos aqui para ajudar</h2>
-          <p class="text-gray-600 mb-8">
-            Tem alguma dúvida ou precisa de suporte? Nossa equipe está pronta para atender você e garantir a melhor
-            experiência com o WUNDU.
-          </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-            <div class="flex items-start">
-              <div class="text-primary mr-4">
-                <i class="fas fa-envelope text-2xl"></i>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Seu nome">
               </div>
               <div>
-                <h3 class="font-semibold text-dark mb-1">Email</h3>
-                <p class="text-gray-600">contato@wundu.com.br</p>
+                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="seu@email.com">
               </div>
             </div>
-            <div class="flex items-start">
-              <div class="text-primary mr-4">
-                <i class="fas fa-phone-alt text-2xl"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-dark mb-1">Telefone</h3>
-                <p class="text-gray-600">(11) 3456-7890</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="text-primary mr-4">
-                <i class="fas fa-map-marker-alt text-2xl"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-dark mb-1">Endereço</h3>
-                <p class="text-gray-600">Av. Paulista, 1000 - São Paulo</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="text-primary mr-4">
-                <i class="fas fa-clock text-2xl"></i>
-              </div>
-              <div>
-                <h3 class="font-semibold text-dark mb-1">Horário</h3>
-                <p class="text-gray-600">Seg-Sex: 9h às 18h</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex space-x-4">
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-light rounded-2xl p-8 shadow-lg" data-aos="fade-left">
-          <form>
-            <div class="mb-6">
-              <label for="name" class="block text-gray-700 font-medium mb-2">Nome completo</label>
-              <input type="text" id="name"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all outline-none"
-                placeholder="Seu nome">
-            </div>
-            <div class="mb-6">
-              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-              <input type="email" id="email"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all outline-none"
-                placeholder="seu@email.com">
-            </div>
-            <div class="mb-6">
-              <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+            <div>
+              <label for="subject" class="block text-gray-700 mb-2">Assunto</label>
               <input type="text" id="subject"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all outline-none"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 placeholder="Assunto da mensagem">
             </div>
-            <div class="mb-6">
-              <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+            <div>
+              <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
               <textarea id="message" rows="5"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-primary/20 transition-all outline-none"
-                placeholder="Sua mensagem..."></textarea>
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                placeholder="Sua mensagem ou feedback"></textarea>
             </div>
-            <button type="submit" class="w-full btn-primary text-white px-6 py-4 rounded-lg font-medium shadow-lg">
+            <button type="submit"
+              class="btn-primary text-white px-8 py-4 rounded-full font-medium shadow-lg w-full md:w-auto">
               Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
             </button>
           </form>
+        </div>
+
+        <div data-aos="fade-left">
+          <div class="h-full flex flex-col">
+            <div class="bg-light rounded-2xl p-8 mb-8 flex-grow">
+              <h3 class="font-poppins text-2xl font-bold text-dark mb-6">Informações de Contato</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-3 rounded-lg mr-4">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-dark">Email</h4>
+                    <a href="mailto:contato@wundu.com.br"
+                      class="text-primary hover:text-secondary transition-colors">contato@wundu.net</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-3 rounded-lg mr-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-dark">Localização</h4>
+                    <p class="text-gray-600">Angola, Luanda</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-3 rounded-lg mr-4">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-dark">GitHub</h4>
+                    <a href="https://github.com/wundu-finance"
+                      class="text-primary hover:text-secondary transition-colors">github.com/wundu-finance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-light rounded-2xl p-8">
+              <h3 class="font-poppins text-2xl font-bold text-dark mb-6">Redes Sociais</h3>
+              <div class="flex space-x-4">
+                <a href="#"
+                  class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"
+                  class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                  class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"
+                  class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-24 bg-light">
+    <div class="container mx-auto px-6">
+      <div class="bg-primary rounded-3xl overflow-hidden relative">
+        <div
+          class="absolute right-0 bottom-0 w-80 h-80 bg-secondary rounded-full opacity-20 transform translate-x-1/4 translate-y-1/4">
+        </div>
+        <div
+          class="absolute left-0 top-0 w-64 h-64 bg-accent rounded-full opacity-10 transform -translate-x-1/3 -translate-y-1/3">
+        </div>
+
+        <div class="p-12 md:p-16 relative z-10 max-w-3xl mx-auto text-center">
+          <h2 class="font-poppins text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">Mantenha-se
+            Atualizado</h2>
+          <p class="text-white opacity-90 mb-8" data-aos="fade-up" data-aos-delay="100">
+            Inscreva-se para receber novidades sobre o lançamento oficial do WUNDU e dicas financeiras exclusivas
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
+            <input type="email" class="flex-grow px-6 py-4 rounded-full focus:outline-none"
+              placeholder="Seu melhor email">
+            <button type="submit"
+              class="btn-secondary text-primary px-8 py-4 rounded-full font-medium shadow-lg whitespace-nowrap">
+              Inscrever-se <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </form>
+          <p class="text-white opacity-75 text-sm mt-4" data-aos="fade-up" data-aos-delay="300">
+            Nós respeitamos sua privacidade. Não compartilhamos seus dados com terceiros.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white pt-16 pb-8">
+  <footer class="bg-dark text-white py-16">
     <div class="container mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-        <div>
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="col-span-2 md:col-span-1">
           <img src="assets/logo.png" alt="WUNDU Logo" class="h-12 w-auto mb-6">
-          <p class="text-white/80 mb-6">
-            Transformando a maneira como as pessoas cuidam de suas finanças pessoais desde 2023.
+          <p class="text-gray-400 mb-6">
+            Transformando a maneira como as pessoas gerenciam suas finanças pessoais com tecnologia intuitiva e insights
+            inteligentes.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="text-white/80 hover:text-white transition-colors">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white/80 hover:text-white transition-colors">
+            <a href="#" class="text-gray-400 hover:text-accent transition-colors">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="text-white/80 hover:text-white transition-colors">
+            <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-accent transition-colors">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="text-white/80 hover:text-white transition-colors">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+              <i class="fab fa-facebook-f"></i>
             </a>
           </div>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-6">Links Rápidos</h4>
+          <h3 class="font-poppins font-bold text-lg mb-4">Empresa</h3>
           <ul class="space-y-3">
-            <li><a href="#home" class="text-white/80 hover:text-white transition-colors">Home</a></li>
-            <li><a href="#about" class="text-white/80 hover:text-white transition-colors">Sobre Nós</a></li>
-            <li><a href="#features" class="text-white/80 hover:text-white transition-colors">Recursos</a></li>
-            <li><a href="#testimonials" class="text-white/80 hover:text-white transition-colors">Depoimentos</a></li>
-            <li><a href="#download" class="text-white/80 hover:text-white transition-colors">Download</a></li>
-            <li><a href="#contact" class="text-white/80 hover:text-white transition-colors">Contato</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+            <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Recursos</a></li>
+            <li><a href="#download" class="text-gray-400 hover:text-white transition-colors">Download</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-6">Recursos</h4>
+          <h3 class="font-poppins font-bold text-lg mb-4">Recursos</h3>
           <ul class="space-y-3">
-            <li><a href="#" class="text-white/80 hover:text-white transition-colors">Blog</a></li>
-            <li><a href="#" class="text-white/80 hover:text-white transition-colors">Centro de Ajuda</a></li>
-            <li><a href="#" class="text-white/80 hover:text-white transition-colors">Tutoriais</a></li>
-            <li><a href="#" class="text-white/80 hover:text-white transition-colors">Parceiros</a></li>
-            <li><a href="#" class="text-white/80 hover:text-white transition-colors">Afiliados</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentação</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-6">Inscreva-se</h4>
-          <p class="text-white/80 mb-4">
-            Receba nossas dicas e novidades em seu email
-          </p>
-          <form class="mb-4">
-            <div class="flex">
-              <input type="email" placeholder="Seu email"
-                class="flex-1 px-4 py-3 rounded-l-lg outline-none text-gray-800">
-              <button type="submit" class="btn-secondary px-4 py-3 rounded-r-lg">
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </form>
-          <p class="text-white/60 text-sm">
-            Ao se inscrever, você concorda com nossa Política de Privacidade.
-          </p>
+          <h3 class="font-poppins font-bold text-lg mb-4">Contato</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-accent"></i>
+              <a href="mailto:contato@wundu.com.br"
+                class="text-gray-400 hover:text-white transition-colors">contato@wundu.net</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-accent"></i>
+              <span class="text-gray-400">Angola, Luanda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fab fa-github mr-3 text-accent"></i>
+              <a href="https://github.com/wundu-finance"
+                class="text-gray-400 hover:text-white transition-colors">github.com/wundu-finance</a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="border-t border-white/20 pt-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-white/60 text-sm mb-4 md:mb-0">
-            &copy; 2025 WUNDU. Todos os direitos reservados.
-          </p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-white/60 hover:text-white text-sm transition-colors">Termos de Uso</a>
-            <a href="#" class="text-white/60 hover:text-white text-sm transition-colors">Política de Privacidade</a>
-            <a href="#" class="text-white/60 hover:text-white text-sm transition-colors">Cookies</a>
-          </div>
+      <hr class="border-gray-800 my-12">
+
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 mb-4 md:mb-0">© 2025 WUNDU. Todos os direitos reservados.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-500 hover:text-white transition-colors">Termos de Uso</a>
+          <a href="#" class="text-gray-500 hover:text-white transition-colors">Política de Privacidade</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <a href="#home"
-    class="back-to-top fixed bottom-8 right-8 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg z-50 hover:bg-secondary transition-colors">
+  <!-- Back to top button -->
+  <button id="back-to-top"
+    class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
     <i class="fas fa-chevron-up"></i>
-  </a>
+  </button>
 
-  <!-- AOS Script -->
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Swiper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
 
   <script src="js/app.js"></script>
