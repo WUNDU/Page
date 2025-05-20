@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WUNDU - Políticas de Privacidade e Cookies</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/tailwind.js"></script>
+</head>
+
+<body class="bg-light overflow-x-hidden font-inter">
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-primary bg-opacity-95 z-50 hidden transition-all duration-300">
+    <div class="flex justify-end p-6">
+      <button id="close-menu" class="text-white text-3xl">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="flex flex-col items-center justify-center h-full space-y-8">
+      <a href="index.html" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Home</a>
+      <a href="index.html#about" class="text-white text-2xl hover:text-accent transition-colors mobile-link">Sobre</a>
+      <a href="index.html#features"
+        class="text-white text-2xl hover:text-accent transition-colors mobile-link">Recursos</a>
+      <a href="index.html#download"
+        class="text-white text-2xl hover:text-accent transition-colors mobile-link">Download</a>
+      <a href="index.html#contact"
+        class="text-white text-2xl hover:text-accent transition-colors mobile-link">Contato</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="navbar" class="fixed w-full z-40 transition-all duration-500 navbar-transparent">
+    <nav class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="WUNDU Logo" class="h-12 w-auto floating">
+          </a>
+        </div>
+        <div class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-white hover:text-accent transition-colors nav-link">Home</a>
+          <a href="index.html#about" class="text-white hover:text-accent transition-colors nav-link">Sobre</a>
+          <a href="index.html#features" class="text-white hover:text-accent transition-colors nav-link">Recursos</a>
+          <a href="index.html#download" class="text-white hover:text-accent transition-colors nav-link">Download</a>
+          <a href="index.html#contact" class="text-white hover:text-accent transition-colors nav-link">Contato</a>
+        </div>
+        <button id="open-menu" class="lg:hidden text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-[80vh] relative">
+    <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080');">
+    </div>
+    <div class="absolute inset-0 z-10 hero-gradient"></div>
+    <div class="container mx-auto px-6 relative z-20 flex items-center min-h-[80vh]">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <span class="inline-block bg-white bg-opacity-20 backdrop-blur-sm px-4 py-1 rounded-full text-white mb-4"
+          data-aos="fade-right" data-aos-delay="200">
+          WUNDU • Privacidade e Segurança em Primeiro Lugar
+        </span>
+        <h1 class="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-right"
+          data-aos-delay="300">
+          Políticas de Privacidade e Cookies
+        </h1>
+        <p class="text-lg md:text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto" data-aos="fade-right"
+          data-aos-delay="400">
+          Entenda como coletamos, usamos e protegemos suas informações pessoais e financeiras enquanto você utiliza os
+          serviços da WUNDU.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="500">
+          <a href="#privacy-policy"
+            class="btn-primary text-white px-8 py-4 rounded-full font-medium text-center shadow-lg">
+            Ler a Política <i class="fas fa-arrow-down ml-2"></i>
+          </a>
+          <a href="index.html#contact"
+            class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-medium text-center hover:bg-opacity-30 transition-all">
+            Fale Conosco <i class="fas fa-comment ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 text-center">
+      <div class="animate-bounce">
+        <a href="#privacy-policy"
+          class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center backdrop-blur-sm hover:bg-opacity-30 transition-all">
+          <i class="fas fa-chevron-down text-white"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabbed Content -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-tertiary font-medium">NOSSAS POLÍTICAS</span>
+        <h2 class="font-poppins text-4xl font-bold text-dark mt-2 mb-4">Entenda Nossas Regras</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">Saiba como tratamos seus dados e os termos que regem o uso do nosso
+          serviço.</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-wrap mb-8 border-b border-gray-200">
+          <button class="policy-tab-btn active-tab text-lg px-6 py-3 text-primary font-medium border-b-2 border-primary"
+            data-tab="privacy">
+            Política de Privacidade
+          </button>
+          <button
+            class="policy-tab-btn text-lg px-6 py-3 text-gray-500 font-medium hover:text-primary transition-colors"
+            data-tab="cookies">
+            Política de Cookies
+          </button>
+          <button
+            class="policy-tab-btn text-lg px-6 py-3 text-gray-500 font-medium hover:text-primary transition-colors"
+            data-tab="terms">
+            Termos de Uso
+          </button>
+        </div>
+
+        <!-- Privacy Policy Tab -->
+        <div id="privacy-policy" class="policy-tab active mb-16">
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">1. Introdução</h2>
+            <p class="text-gray-600 mb-4">
+              A WUNDU está empenhada em proteger sua privacidade e garantir a segurança dos seus dados pessoais. Esta
+              Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações
+              quando você:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Utiliza nosso aplicativo de controle financeiro;</li>
+              <li>Visita nosso site;</li>
+              <li>Interage com nossos serviços, comunicações e anúncios.</li>
+            </ul>
+            <a href="index.html#contact"
+              class="text-primary font-medium inline-flex items-center group-hover:text-secondary transition-all duration-300">
+              Fale Conosco <i class="fas fa-arrow-right ml-2 transition-all duration-300 group-hover:translate-x-2"></i>
+            </a>
+          </div>
+          <!-- Remaining sections follow the same pattern -->
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-info-circle text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">2. Informações que coletamos</h2>
+            <p class="text-gray-600 mb-4">Coletamos os seguintes tipos de informações:</p>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.1. Informações fornecidas por você:</h3>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Informações de cadastro (nome, e-mail, senha);</li>
+              <li>Dados financeiros (transações, categorias de gastos, orçamentos);</li>
+              <li>Metas financeiras;</li>
+              <li>Feedback e comunicações que você envia para nós.</li>
+            </ul>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.2. Informações coletadas automaticamente:
+            </h3>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Dados de uso do aplicativo;</li>
+              <li>Informações do dispositivo (tipo, sistema operacional, identificadores);</li>
+              <li>Dados de localização aproximada (quando permitido);</li>
+              <li>Informações de log e diagnóstico.</li>
+            </ul>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="150">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-cogs text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">3. Como usamos suas informações</h2>
+            <p class="text-gray-600 mb-4">Utilizamos suas informações para:</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Fornecer, manter e melhorar nossos serviços;</li>
+              <li>Processar e gerenciar suas transações financeiras;</li>
+              <li>Personalizar sua experiência e fornecer recomendações;</li>
+              <li>Desenvolver novos produtos e recursos;</li>
+              <li>Comunicar-nos com você sobre atualizações, promoções ou eventos;</li>
+              <li>Detectar, prevenir e solucionar problemas técnicos ou de segurança;</li>
+              <li>Cumprir obrigações legais.</li>
+            </ul>
+          </div>
+          <div class="card-hover  mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-share-alt text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">4. Compartilhamento de informações</h2>
+            <p class="text-gray-600 mb-4">
+              Não vendemos seus dados pessoais. Compartilhamos suas informações apenas nas seguintes circunstâncias:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Com fornecedores de serviços que trabalham em nosso nome;</li>
+              <li>Para cumprir obrigações legais;</li>
+              <li>Para proteger direitos e segurança;</li>
+              <li>Com seu consentimento ou mediante suas instruções.</li>
+            </ul>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="250">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-lock text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">5. Segurança dos dados</h2>
+            <p class="text-gray-600 mb-4">
+              Implementamos medidas técnicas e organizacionais apropriadas para proteger seus dados pessoais, incluindo:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Criptografia de dados sensíveis;</li>
+              <li>Controles de acesso rigorosos;</li>
+              <li>Monitoramento e testes regulares;</li>
+              <li>Backups seguros;</li>
+              <li>Treinamento de segurança para nossa equipe.</li>
+            </ul>
+          </div>
+          <div class="card-hover  mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-user-shield text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">6. Seus direitos</h2>
+            <p class="text-gray-600 mb-4">
+              Você tem certos direitos relacionados aos seus dados pessoais:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Acessar e receber uma cópia dos seus dados;</li>
+              <li>Retificar dados incorretos;</li>
+              <li>Excluir seus dados (em certas circunstâncias);</li>
+              <li>Restringir ou opor-se ao processamento;</li>
+              <li>Portabilidade de dados;</li>
+              <li>Retirar consentimento a qualquer momento.</li>
+            </ul>
+            <p class="text-gray-600">
+              Para exercer qualquer um desses direitos, entre em contato conosco através de Support@wundu.tech.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="350">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-edit text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">7. Alterações nesta política</h2>
+            <p class="text-gray-600 mb-4">
+              Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas ou
+              por outros motivos operacionais, legais ou regulatórios. Notificaremos você sobre quaisquer alterações
+              materiais através do nosso aplicativo ou site.
+            </p>
+            <p class="text-gray-600">
+              Data da última atualização: 20 de maio de 2025
+            </p>
+          </div>
+        </div>
+
+        <!-- Cookies Policy Tab -->
+        <div id="cookies-policy" class="policy-tab hidden mb-16">
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-cookie-bite text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">1. O que são cookies?</h2>
+            <p class="text-gray-600 mb-4">
+              Cookies são pequenos arquivos de texto que são armazenados no seu dispositivo (computador, tablet,
+              smartphone) quando você visita um site. Eles são amplamente utilizados para fazer os sites funcionarem de
+              maneira mais eficiente, bem como fornecer informações aos proprietários do site.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-cog text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">2. Como usamos cookies</h2>
+            <p class="text-gray-600 mb-4">A WUNDU utiliza cookies para os seguintes propósitos:</p>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.1. Cookies essenciais:</h3>
+            <p class="text-gray-600 mb-4">
+              Necessários para o funcionamento do site. Incluem, por exemplo, cookies que permitem que você faça login
+              em áreas seguras do site ou use o carrinho de compras.
+            </p>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.2. Cookies de desempenho:</h3>
+            <p class="text-gray-600 mb-4">
+              Coletam informações sobre como os visitantes usam nosso site, quais páginas visitam e se encontram erros.
+              Esses cookies não coletam informações que identificam um visitante e são usados apenas para melhorar o
+              funcionamento do site.
+            </p>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.3. Cookies de funcionalidade:</h3>
+            <p class="text-gray-600 mb-4">
+              Permitem que o site lembre de escolhas que você faz (como seu nome de usuário, idioma ou região) e
+              forneçam recursos aprimorados e mais personalizados.
+            </p>
+            <h3 class="font-poppins text-xl font-semibold text-dark mb-2">2.4. Cookies de publicidade/direcionamento:
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Registram suas visitas ao nosso site, as páginas que você visitou e os links que você seguiu. Usamos essas
+              informações para tornar nossa publicidade mais relevante para seus interesses.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="150">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-sliders-h text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">3. Controle de cookies</h2>
+            <p class="text-gray-600 mb-4">
+              Você pode controlar e/ou excluir cookies conforme desejar. Você pode excluir todos os cookies que já estão
+              no seu dispositivo e pode configurar a maioria dos navegadores para impedir que sejam colocados. No
+              entanto, se você fizer isso, talvez tenha que ajustar manualmente algumas preferências sempre que visitar
+              um site, e alguns serviços e funcionalidades podem não funcionar.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Para mais informações sobre como gerenciar cookies, visite:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li><a href="https://support.google.com/accounts/answer/61416"
+                  class="text-primary hover:text-secondary">Google Chrome</a></li>
+              <li><a
+                  href="https://support.mozilla.org/pt-BR/kb/cookies-informacoes-que-os-sites-armazenam-no-seu-computador"
+                  class="text-primary hover:text-secondary">Mozilla Firefox</a></li>
+              <li><a
+                  href="https://support.microsoft.com/pt-br/help/17442/windows-internet-explorer-delete-manage-cookies"
+                  class="text-primary hover:text-secondary">Internet Explorer</a></li>
+              <li><a href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac"
+                  class="text-primary hover:text-secondary">Safari</a></li>
+            </ul>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-plug text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">4. Cookies de terceiros</h2>
+            <p class="text-gray-600 mb-4">
+              Alguns cookies são colocados por serviços de terceiros que aparecem em nossas páginas. Utilizamos serviços
+              de terceiros como:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Google Analytics (análise de tráfego);</li>
+              <li>Redes sociais (botões de compartilhamento);</li>
+              <li>Serviços de publicidade.</li>
+            </ul>
+            <p class="text-gray-600">
+              Esses terceiros podem coletar suas informações pessoais quando você interage com seus serviços.
+              Recomendamos que você consulte as políticas de privacidade desses terceiros para entender como eles usam
+              suas informações.
+            </p>
+          </div>
+        </div>
+
+        <!-- Terms of Use Tab -->
+        <div id="terms-policy" class="policy-tab hidden mb-16">
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-file-contract text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">1. Aceitação dos Termos</h2>
+            <p class="text-gray-600 mb-4">
+              Ao acessar e utilizar o aplicativo e serviços da WUNDU, você concorda com estes Termos de Uso e com nossa
+              Política de Privacidade. Se você não concordar com algum aspecto desses termos, recomendamos que não
+              utilize nossos serviços.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-rocket text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">2. Uso do Serviço</h2>
+            <p class="text-gray-600 mb-4">
+              A WUNDU oferece um aplicativo de gerenciamento financeiro pessoal que permite aos usuários rastrear
+              gastos, criar orçamentos e estabelecer metas financeiras. Ao utilizar nosso serviço, você concorda em:
+            </p>
+            <ul class="list-disc pl-6 mb-4 text-gray-600 space-y-2">
+              <li>Fornecer informações precisas e completas quando solicitado;</li>
+              <li>Manter a segurança de sua conta e senha;</li>
+              <li>Não utilizar o serviço para qualquer finalidade ilegal ou não autorizada;</li>
+              <li>Não tentar acessar áreas restritas do serviço sem autorização.</li>
+            </ul>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="150">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-user-edit text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">3. Conteúdo do Usuário</h2>
+            <p class="text-gray-600 mb-4">
+              Você é o único responsável pelos dados que inserir no aplicativo WUNDU. Ao fornecer seu conteúdo em nosso
+              serviço, você concede à WUNDU uma licença mundial, não exclusiva e isenta de royalties para usar,
+              modificar, executar e exibir esse conteúdo em conexão com a operação do serviço.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-copyright text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">4. Propriedade Intelectual</h2>
+            <p class="text-gray-600 mb-4">
+              Todo o conteúdo, recursos e funcionalidades do aplicativo WUNDU, incluindo, mas não se limitando a textos,
+              gráficos, logotipos, ícones, imagens, clipes de áudio, downloads digitais e compilações de dados, são
+              propriedade da WUNDU ou de seus licenciadores e protegidos por leis de propriedade intelectual.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="250">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-exclamation-circle text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">5. Limitação de Responsabilidade</h2>
+            <p class="text-gray-600 mb-4">
+              A WUNDU não garante que o serviço será ininterrupto, pontual, seguro ou livre de erros. O aplicativo é
+              fornecido "como está" e "conforme disponível". Não seremos responsáveis por quaisquer perdas ou danos
+              resultantes do uso ou incapacidade de usar nosso serviço.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Não somos um serviço de consultoria financeira profissional. As informações fornecidas através de nosso
+              aplicativo são apenas para fins informativos e não constituem aconselhamento financeiro, fiscal ou legal.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-edit text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">6. Modificações dos Termos</h2>
+            <p class="text-gray-600 mb-4">
+              Reservamo-nos o direito de modificar ou substituir estes termos a qualquer momento. Notificaremos sobre
+              alterações significativas através do aplicativo ou site. O uso continuado do serviço após tais alterações
+              constitui sua aceitação dos novos termos.
+            </p>
+          </div>
+          <div class="card-hover mt-8 mb-8 bg-light p-8 rounded-2xl shadow-md relative overflow-hidden group"
+            data-aos="fade-up" data-aos-delay="350">
+            <div
+              class="absolute right-0 top-0 h-24 w-24 bg-tertiary bg-opacity-10 rounded-bl-full transition-all duration-300 group-hover:bg-opacity-20">
+            </div>
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-all duration-300">
+              <i class="fas fa-gavel text-2xl"></i>
+            </div>
+            <h2 class="font-poppins text-2xl font-bold text-dark mb-4">7. Lei Aplicável</h2>
+            <p class="text-gray-600 mb-4">
+              Estes termos serão regidos e interpretados de acordo com as leis de Angola, sem considerar disposições de
+              conflitos de leis.
+            </p>
+            <p class="text-gray-600">
+              Data da última atualização: 20 de maio de 2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-24 bg-light">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl overflow-hidden relative">
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-80 h-80 bg-white opacity-5 rounded-full transform -translate-x-1/2 translate-y-1/2">
+        </div>
+        <div class="p-12 md:p-16 text-center" data-aos="fade-up">
+          <h2 class="font-poppins text-3xl md:text-4xl font-bold text-white mb-6">Dúvidas sobre nossa política?</h2>
+          <p class="text-white opacity-90 mb-8 max-w-2xl mx-auto">
+            Estamos comprometidos com a transparência e queremos garantir que você compreenda completamente como
+            tratamos suas informações. Entre em contato conosco caso tenha dúvidas.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html#contact"
+              class="btn-primary text-white px-8 py-4 rounded-full font-medium text-center shadow-lg">
+              Fale Conosco <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a href="index.html#download"
+              class="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-medium text-center hover:bg-opacity-30 transition-all">
+              Baixe o MVP <i class="fas fa-download ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="col-span-2 md:col-span-1">
+          <img src="assets/logo.png" alt="WUNDU Logo" class="h-12 w-auto mb-6 floating">
+          <p class="text-gray-400 mb-6">
+            Transformando a maneira como as pessoas gerenciam suas finanças pessoais com tecnologia intuitiva e insights
+            inteligentes.
+          </p>
+          <div class="flex space-x-4">
+            <a target="_blank" href="https://www.instagram.com/onewundu"
+              class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/onewundu/"
+              class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://x.com/onewundu"
+              class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61574847264364"
+              class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a target="_blank" href="https://app.mirantes.io/public/shared/mira/68232f6acb953a9485ee1a94"
+              class="bg-primary hover:bg-secondary transition-colors w-12 h-12 rounded-full flex items-center justify-center text-white">
+              <img src="assets/mirantes-logo.svg" alt="Mirantes" class="w-6 h-6 white-filter">
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-poppins font-bold text-lg mb-4">Empresa</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+            <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors">Recursos</a></li>
+            <li><a href="index.html#download" class="text-gray-400 hover:text-white transition-colors">Download</a></li>
+            <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-poppins font-bold text-lg mb-4">Recursos</h3>
+          <ul class="space-y-3">
+            <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentação</a></li>
+            <li><a href="https://github.com/wundu" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+            </li>
+            <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-poppins font-bold text-lg mb-4">Contato</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-accent"></i>
+              <a href="mailto:Support@wundu.tech"
+                class="text-gray-400 hover:text-white transition-colors">Support@wundu.tech</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-accent"></i>
+              <span class="text-gray-400">Angola, Luanda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fab fa-github mr-3 text-accent"></i>
+              <a href="https://github.com/wundu"
+                class="text-gray-400 hover:text-white transition-colors">github.com/wundu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-gray-800 my-12">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 mb-4 md:mb-0">© 2025 WUNDU. Todos os direitos reservados.</p>
+        <div class="flex space-x-6">
+          <a href="#terms-policy" class="text-gray-500 hover:text-white transition-colors">Termos de Uso</a>
+          <a href="#privacy-policy" class="text-gray-500 hover:text-white transition-colors">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

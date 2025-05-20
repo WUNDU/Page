@@ -1,4 +1,4 @@
-// Inicializar AOS
+// AOS Initialization
 AOS.init({
   duration: 800,
   easing: 'ease-in-out',
@@ -39,13 +39,13 @@ window.addEventListener('scroll', () => {
     navbar.classList.add('navbar-active');
     navLinks.forEach(link => {
       link.classList.remove('text-white');
-      link.classList.add('text-dark');
+      link.classList.add('text-primary');
     });
   } else {
     navbar.classList.remove('navbar-active');
     navbar.classList.add('navbar-transparent');
     navLinks.forEach(link => {
-      link.classList.remove('text-dark');
+      link.classList.remove('text-primary');
       link.classList.add('text-white');
     });
   }
@@ -69,60 +69,62 @@ document.getElementById('back-to-top').addEventListener('click', () => {
   });
 });
 
-// FAQ toggles
-const faqToggles = document.querySelectorAll('.faq-toggle');
+// Tab switching and anchor link handling
+function switchTab(tabId) {
+  // Remove active class from all buttons
+  document.querySelectorAll('.policy-tab-btn').forEach(btn => {
+    btn.classList.remove('active-tab', 'border-primary', 'text-primary');
+    btn.classList.add('text-gray-500');
+  });
 
-faqToggles.forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    const content = toggle.nextElementSibling;
-    const icon = toggle.querySelector('i');
+  // Hide all tabs
+  document.querySelectorAll('.policy-tab').forEach(tab => tab.classList.add('hidden'));
 
-    content.classList.toggle('hidden');
-    icon.classList.toggle('rotate-180');
+  // Activate the selected button and tab
+  const button = document.querySelector(`.policy-tab-btn[data-tab="${tabId}"]`);
+  if (button) {
+    button.classList.add('active-tab', 'border-primary', 'text-primary');
+    button.classList.remove('text-gray-500');
+  }
 
-    // Fechar os outros FAQs
-    faqToggles.forEach(otherToggle => {
-      if (otherToggle !== toggle) {
-        const otherContent = otherToggle.nextElementSibling;
-        const otherIcon = otherToggle.querySelector('i');
+  const tab = document.getElementById(`${tabId}-policy`);
+  if (tab) {
+    tab.classList.remove('hidden');
+    // Scroll to the tab section
+    const tabSection = document.querySelector('.policy-tab').closest('section');
+    if (tabSection) {
+      window.scrollTo({
+        top: tabSection.offsetTop - 100, // Adjust for navbar height
+        behavior: 'smooth'
+      });
+    }
+    // Refresh AOS to ensure animations trigger for newly visible elements
+    AOS.refresh();
+  }
+}
 
-        otherContent.classList.add('hidden');
-        otherIcon.classList.remove('rotate-180');
-      }
-    });
+// Handle tab button clicks
+document.querySelectorAll('.policy-tab-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const tabId = button.getAttribute('data-tab');
+    switchTab(tabId);
+    // Update URL hash without jumping
+    history.pushState(null, null, `#${tabId}-policy`);
   });
 });
 
-// Contador de estatísticas (animação simples)
-const statsCounters = document.querySelectorAll('.stats-counter');
-
-const animateCounters = () => {
-  statsCounters.forEach(counter => {
-    const valueDisplay = counter.querySelector('div:first-child');
-    const finalValue = valueDisplay.textContent;
-
-    // Apenas para demonstração - não implementando contador animado completo
-    valueDisplay.classList.add('animate-pulse');
-    setTimeout(() => {
-      valueDisplay.classList.remove('animate-pulse');
-    }, 1500);
-  });
-};
-
-// Ativar animação quando a seção estiver visível
-const observerOptions = {
-  threshold: 0.5
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounters();
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-if (statsCounters.length > 0) {
-  observer.observe(statsCounters[0].parentElement);
+// Handle anchor links on page load and hash changes
+function handleHashChange() {
+  const hash = window.location.hash.replace('#', '');
+  const validTabs = ['privacy-policy', 'cookies-policy', 'terms-policy'];
+  if (validTabs.includes(hash)) {
+    const tabId = hash.replace('-policy', '');
+    switchTab(tabId);
+  }
 }
+
+// Run on page load
+window.addEventListener('load', handleHashChange);
+
+// Run on hash change (e.g., clicking footer links)
+window.addEventListener('hashchange', handleHashChange);
